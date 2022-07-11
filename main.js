@@ -1,1 +1,1 @@
-!function(){"use strict";const o=CyrryV0(((o,c,n,s,t)=>o+c+n+s+t));console.log(o(5)(6)(7)(8)(9))}();
+!function(){"use strict";var t={900:function(t,o){Object.defineProperty(o,"__esModule",{value:!0}),o.task1=void 0,o.task1=function(){const t=CurryV0(((t,o,r,e,n)=>t+o+r+e+n));console.log(t(5)(6)(7)(8)(9))}}},o={};(0,function r(e){var n=o[e];if(void 0!==n)return n.exports;var s=o[e]={exports:{}};return t[e](s,s.exports,r),s.exports}(900).task1)()}();
