@@ -21,7 +21,7 @@ module.exports = {
   },
   entry: {
     main: PATHS.src,
-  }, 
+  },
   output: {
     filename: "[name].js",
     path: PATHS.dist,
@@ -47,7 +47,7 @@ module.exports = {
       },
 
       {
-        test: /\.tsx?$/,
+        test: /\.ts?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
       },      

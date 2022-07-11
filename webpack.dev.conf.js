@@ -4,7 +4,7 @@ const baseWebpackConfig = require("./webpack.base.conf");
 
 const devWebpackConfig = merge(baseWebpackConfig, {
   mode: "development",
-  devtool: "eval-source-map",
+  devtool: "inline-source-map", // eval-source-map
   devServer: {
     port: 9000,
     watchFiles: ["*.pug"],
