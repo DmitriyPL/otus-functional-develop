@@ -23,8 +23,6 @@ declare function CyrryV0<P extends any[], R>(
   f: (...args: P) => R
 ): MyCurry<P, R>;
 
-// interface myCurry<number, number, number, number, number>
-
 type test08 = Parameters<typeof func>;
 type test09 = Head<[1, 2, string, number]>;
 type test10 = Head<Params<typeof func>>;

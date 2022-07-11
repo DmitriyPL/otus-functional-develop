@@ -1,7 +1,7 @@
 {
   "name": "blog",
   "version": "1.0.0",
-  "description": "Functional developing",
+  "description": "Functional develop",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --open --config ./webpack.dev.conf.js",
@@ -16,12 +16,12 @@
   "author": "https://github.com/DmitriyPL",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DmitriyPL/otus-functional-develop.git"
+    "url": "git+https://github.com/DmitriyPL/otus-functional-delelop.git"
   },
   "bugs": {
-    "url": "https://github.com/DmitriyPL/otus-functional-develop/issues"
+    "url": "https://github.com/DmitriyPL/otus-functional-delelop/issues"
   },
-  "homepage": "https://github.com/DmitriyPL/otus-functional-develop#readme",
+  "homepage": "https://github.com/DmitriyPL/otus-functional-delelop#readme",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.18.5",
