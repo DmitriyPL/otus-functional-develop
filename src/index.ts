@@ -1,9 +1,3 @@
-// SCSS
-import "./assets/scss/main.scss";
-
-// CSS
-import "./assets/css/normalize.css";
-
 import { Field } from "./ts/field";
 
 function run(field: Field, gameSpeed: number) {

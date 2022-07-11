@@ -8,7 +8,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const PATHS = {
   src: path.resolve(__dirname, "src"),
   dist: path.resolve(__dirname, "dist"),
-  assets: "assets/",
 };
 
 const PAGES_DIR = `${PATHS.src}/pug/pages/`;
@@ -91,14 +90,6 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: `[name].css`,
-    }),
-
-    new CopyWebpackPlugin({
-      patterns: [
-        { from: `${PATHS.src}/${PATHS.assets}img`, to: `${PATHS.assets}img` },
-        { from: `${PATHS.src}/${PATHS.assets}fonts`, to: `${PATHS.assets}fonts`, },
-        { from: `${PATHS.src}/static`, to: "static" },
-      ],
     }),
 
     new HtmlWebpackPlugin({
