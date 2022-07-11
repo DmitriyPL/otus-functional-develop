@@ -1,9 +1,9 @@
-// type Params<F extends (...args: any[]) => any> = 
+// type Params<F extends (...args: any[]) => any> =
 // F extends (...args: infer A) => any
 // ? A
 // : never
 
-// type Head<T extends any[]> = 
+// type Head<T extends any[]> =
 // T extends [any, ...any[]]
 // ? T[0]
 // : never
@@ -40,7 +40,6 @@
 // type test16 = HasTail<Tail<Tail<params>>>
 
 // const func = (a: number, b: number, c: number, d: number, e: number) => a + b + c + d + e;
-
 
 // const hof = myCurry(func);
 
