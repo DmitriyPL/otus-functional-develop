@@ -1,4 +1,4 @@
-import { Cell } from "../ts/cell";
+import { Cell } from "./task1";
 
 describe("cell to be instance of Cell", () => {
   const cell = new Cell("dead");
