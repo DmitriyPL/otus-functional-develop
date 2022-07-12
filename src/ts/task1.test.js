@@ -1,35 +1,18 @@
-import { Cell } from "./task1";
+import { myCurry } from "./task1";
 
-describe("cell to be instance of Cell", () => {
-  const cell = new Cell("dead");
+describe("function myCurry", () => {
+  const func = (a, b, c, d, e) => a + b + c + d + e;
+  const hof = myCurry(func);
 
-  it("to be instance of Cell", () => {
-    expect(cell).toBeInstanceOf(Cell);
-  });
-});
-
-describe("methods setType/getType", () => {
-  const cell = new Cell("dead");
-
-  it("get type for cell ", () => {
-    expect(cell.getType()).toBe("dead");
+  it("hof to be instance of Function", () => {
+    expect(hof).toBeInstanceOf(Function);
   });
 
-  it("get type for cell ", () => {
-    cell.setType("alive");
-    expect(cell.getType()).toBe("alive");
-  });
-});
-
-describe("methods setNextType/getNextType", () => {
-  const cell = new Cell("dead");
-
-  it("get next type for cell ", () => {
-    expect(cell.getNextType()).toBe("");
-  });
-
-  it("set next type for cell ", () => {
-    cell.setNextType("alive");
-    expect(cell.getNextType()).toBe("alive");
+  it("hof works as curry", () => {
+    expect(hof(1, 2, 3, 4, 5)).toBe(15);
+    expect(hof(2, 3, 4)(5, 6)).toBe(20);
+    expect(hof(3, 4)(5, 6)(7)).toBe(25);
+    expect(hof(4, 5)(6)(7, 8)).toBe(30);
+    expect(hof(5)(6)(7)(8)(9)).toBe(35);
   });
 });
