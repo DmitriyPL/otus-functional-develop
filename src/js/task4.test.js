@@ -5,19 +5,19 @@ describe("function spiral", () => {
     expect(spiral).toBeInstanceOf(Function);
   });
 
-  it("spiral result is Array1", () => {
+  it("spiral result is []", () => {
     const matrix = [[]];
 
     expect(spiral(matrix)).toEqual([]);
   });
 
-  it("spiral result is Array1", () => {
+  it("spiral result is [0, 1, 2, 3, 4]", () => {
     const matrix = [[0, 1, 2, 3, 4]];
 
     expect(spiral(matrix)).toEqual([0, 1, 2, 3, 4]);
   });
 
-  it("spiral result is Array1", () => {
+  it("spiral result is [0, 1, 2, 3, 4, 9, 14, 19, 18, 17, 16, 15, 10, 5, 6, 7, 8, 13, 12, 11]", () => {
     const matrix = [
       [0, 1, 2, 3, 4],
       [5, 6, 7, 8, 9],
