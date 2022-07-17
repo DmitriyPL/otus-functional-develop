@@ -22,27 +22,4 @@ describe("class Parallel", () => {
       expect(data).toBeInstanceOf(Array);
     });
   });
-
-  // it("runner used two parallel workers", () => {
-  //   return main().then( data => {
-  //     expect(data.length).toBe(3);
-  //   })
-  // });
-
-  // it("1st worker has two results", () => {
-  //   return main(runner).then( data => {
-  //     expect(data[0].length).toBe(2);
-  //     expect(data[0]).toEqual([1, 2]);
-  //   })
-  // });
-
-  // it("2st worker has two results", () => {
-  //   expect(data[1].length).toBe(2);
-  //   expect(data[1]).toEqual([3, 4]);
-  // });
-
-  // it("3rd worker has one result", () => {
-  //   expect(data[2].length).toBe(1);
-  //   expect(data[2]).toEqual([5]);
-  // });
 });
